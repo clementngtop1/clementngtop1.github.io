@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+/* Match the Vince Tech AI assistant panel, scoped to the Staywhale embed. */
+#vtPanel{width:650px;max-width:calc(100vw - 40px);height:min(700px,calc(100dvh - 130px));border:1px solid #e4e9e5;border-radius:10px;background:#fff;font-family:'DM Sans',Arial,sans-serif;color:#162c29;letter-spacing:0;box-shadow:0 16px 60px #183d342b}
+#vtPanel .vt-head{background:#fff;color:#162c29;padding:19px 20px 16px;gap:10px;border-bottom:1px solid #edf0e9;flex-shrink:0}
+#vtPanel .vt-head h2{font:700 14px Manrope,Arial;margin:0}
+#vtPanel .vt-head p{font-size:10px;color:#8e9b8b;margin:6px 0 0}
+#vtPanel #vtReset{margin-left:auto;background:#fff;border:1px solid #dce3db;border-radius:6px;padding:7px 10px;font-size:10px;font-weight:500;color:#455a4b;width:auto;height:auto;white-space:nowrap}
+#vtPanel #vtClose{background:#fff;color:#7b8c75;width:25px;height:28px;font-size:21px;border:1px solid #e8ece3;border-radius:5px}
+#vtPanel .vt-period-controls{display:flex;align-items:center;gap:8px;padding:10px 20px;background:#fff;border-bottom:1px solid #edf0e9;flex-shrink:0}
+#vtPanel .vt-period-controls select,#vtPanel .vt-period-controls input{border:1px solid #dce4d8;border-radius:6px;background:#fff;color:#6f845f;font:10px 'DM Sans',Arial,sans-serif;padding:7px 9px;min-width:0}
+#vtPanel .vt-engine-badge{margin-left:auto;color:#7b876e;background:#f1f3ed;font-size:8px;padding:5px 7px;border-radius:5px;white-space:nowrap;letter-spacing:.3px}
+#vtPanel .vt-messages{background:#fff;padding:22px;display:flex;flex-direction:column;scroll-behavior:auto}
+#vtPanel .chat-welcome{text-align:center;padding:14px 0 20px;margin:auto 0;width:100%}
+#vtPanel .chat-welcome .spark{font-size:38px;color:#62936c;display:block;font-weight:400;line-height:1.2}
+#vtPanel .chat-welcome h2{font:700 21px/1.4 Manrope,Arial;margin:17px 0 10px;color:#162c29;letter-spacing:-.6px}
+#vtPanel .chat-welcome .sub{font-size:11px;color:#879a7d;line-height:1.8;margin:0}
+#vtPanel .suggestions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:25px}
+#vtPanel .suggestion{text-align:left;background:#fafbf7;border:1px solid #e4e9e5;padding:15px 14px;border-radius:7px;color:#8b9c80;font:10px/1.7 'DM Sans',Arial;min-height:79px}
+#vtPanel .suggestion b{display:block;font-size:11px;font-weight:600;color:#45603a;margin-bottom:5px}
+#vtPanel .suggestion:hover{border-color:#aac498;background:#f4f8ee}
+#vtPanel .vt-msg{display:block;flex-shrink:0;margin-bottom:18px;animation:none}
+#vtPanel .vt-msg.assistant{background:#fafbf8;border:1px solid #e4e9e5;padding:16px;border-radius:8px}
+#vtPanel .vt-answer-label{font-size:12px;font-weight:600;color:#335332;line-height:1.8;margin-bottom:7px}
+#vtPanel .vt-msg .vt-bubble{max-width:none;width:100%;background:transparent;border:0;border-radius:0;padding:0;color:#526a46;font-size:12px;line-height:1.9;min-width:0}
+#vtPanel .vt-msg.user{text-align:right;background:none;border:0;padding:0}
+#vtPanel .vt-msg.user .vt-bubble{display:inline-block;text-align:left;width:auto;max-width:87%;background:#edf4e9;color:#416132;padding:10px 17px;border-radius:12px 12px 0 12px}
+#vtPanel .vt-bubble td,#vtPanel .vt-bubble th{font-size:11px;padding:8px 10px}
+#vtPanel .vt-answer-source{font-size:10px;color:#879b7b}
+#vtPanel .vt-inline-actions{gap:8px}
+#vtPanel .vt-action{font-size:10px;padding:8px 11px;border-radius:6px}
+#vtPanel .vt-action.primary{background:#237352;border-color:#237352}
+#vtPanel .vt-form{border-top:1px solid #e4e9e5;padding:16px 18px 10px;align-items:flex-end;gap:10px;flex-shrink:0}
+#vtPanel .vt-form textarea{font:12px 'DM Sans',Arial;height:44px;min-height:44px;background:#fff;border:1px solid #dce4d8;border-radius:6px;padding:13px 11px;color:#49603c}
+#vtPanel .vt-form textarea::placeholder{font:11px 'DM Sans',Arial;color:#9aaa91}
+#vtPanel .vt-form button{width:auto;height:36px;border-radius:6px;background:#237352;color:#fff;font:11px 'DM Sans',Arial;padding:10px 14px;white-space:nowrap}
+#vtPanel .vt-disclosure{font-size:9px;color:#9da993;padding:0 15px 12px;flex-shrink:0}
+@media(max-width:750px){#vtPanel{width:600px;max-width:calc(100vw - 28px);right:14px}}
+@media(max-width:560px){#vtPanel{width:calc(100vw - 24px);max-width:none;right:12px;bottom:88px;height:min(720px,calc(100dvh - 105px))}#vtPanel .vt-head{padding:16px 13px;gap:8px}#vtPanel .vt-head h2{font-size:13px}#vtPanel .vt-head p{font-size:8px;line-height:1.7}#vtPanel #vtReset{font-size:9px;padding:6px 8px}#vtPanel .vt-period-controls{padding:9px 13px;gap:6px;flex-wrap:wrap}#vtPanel .vt-engine-badge{font-size:7px;padding:5px}#vtPanel .vt-messages{padding:16px}#vtPanel .chat-welcome{padding:7px 0 14px}#vtPanel .chat-welcome h2{font-size:20px;margin:13px 0 8px}#vtPanel .chat-welcome .sub{font-size:10px}#vtPanel .chat-welcome .spark{font-size:32px}#vtPanel .suggestions{grid-template-columns:1fr;gap:8px;margin-top:20px}#vtPanel .suggestion{padding:12px;min-height:68px}#vtPanel .vt-form{padding:12px 12px 8px;gap:8px}#vtPanel .vt-form textarea{font-size:16px;padding:10px;min-height:44px}#vtPanel .vt-form button{padding:10px 12px}#vtPanel .vt-disclosure{font-size:8px;padding:0 10px 10px}#vtPanel .vt-bubble td,#vtPanel .vt-bubble th{font-size:10px;padding:7px 5px}}
+#vtPanel textarea:focus-visible,#vtPanel input:focus-visible,#vtPanel select:focus-visible,#vtPanel button:focus-visible{outline:2px solid #9ab58a;outline-offset:2px}
